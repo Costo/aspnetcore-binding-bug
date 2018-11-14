@@ -2,6 +2,10 @@
 
 <form asp-controller="Home" asp-action="Index" method="post" role="form">
     <div>
+        <input asp-for="@Model.TopLevelRate" type="number" min="0" step=".01" />
+
+    </div>
+    <div>
         @for (var i = 0; i < Model.InnerModels.Length; i++)
         {
             <input asp-for="@Model.InnerModels[i].Rate" type="number" min="0" step=".01" />

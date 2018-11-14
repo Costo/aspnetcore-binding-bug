@@ -9,6 +9,7 @@ namespace WebApplication1.Controllers
         {
             return View(new TestModel
             {
+                TopLevelRate = 10m,
                 InnerModels = new TestInnerModel[2]
                 {
                     new TestInnerModel { Rate = 2.0m },
